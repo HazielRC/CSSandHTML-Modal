@@ -1,3 +1,8 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0ms;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -8,25 +13,61 @@
   height: 100%;
   overflow: auto;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #888;
   width: 80%;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 .close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: default;
+  -webkit-user-select: none;       
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .close:hover, .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.modal-content p {
+  cursor: default;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #888;
+  transition: 100ms;
+}
+
+.btn:hover {
+  color: #313131;
+  cursor: pointer;
+  box-shadow: -3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  background-color: #38a5ff;
+  color: #f1f1f1;
+}
+.btn-primary:hover {
+  background-color: #249cfd;
+  color: #fff;
 }
